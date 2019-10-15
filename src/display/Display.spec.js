@@ -22,9 +22,14 @@ describe('Display component', () => {
         expect(wrapper.queryByText(/unlocked/i)).toBeInTheDocument();
     })
 
-    it('displays closed if the closed prop is true and locked is true', () => {
-        const wrapper = rtl.render(<Display closed={true} locked={true}/>)
-        expect(wrapper.queryByText(/closed/i)).toBeInTheDocument();
-        // expect(wrapper.queryByText(/locked/i)).toBeInTheDocument();
-    })
+    it('displays Closed if the closed prop is true and Open if otherwise', () => {
+        const wrapper = rtl.render(<Display closed={true} locked={false} />);
+        expect(wrapper.queryByText(/Closed/)).toBeInTheDocument();
+      });
+
+      it('displays Locked if the locked prop is true and Unlocked if otherwise', () => {
+
+        const wrapper = rtl.render(<Display closed={false} locked={true} />);
+        expect(wrapper.queryByText(/Locked/)).toBeInTheDocument();
+      });
 })

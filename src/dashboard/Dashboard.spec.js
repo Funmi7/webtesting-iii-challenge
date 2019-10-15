@@ -11,19 +11,19 @@ let wrapper;
 beforeEach(() => {
     wrapper = rtl.render(<Dashboard />)
 })
-    describe('Dashboard component', () => {
+describe('Dashboard component', () => {
 
-        test('matches the snapshot!', () => {
-            expect(wrapper.container).toMatchSnapshot();
-        })
+    test('matches the snapshot!', () => {
+        expect(wrapper.container).toMatchSnapshot();
+    })
 
-        it('displays the lock display', () => {
-            expect(wrapper.queryByText(/unlocked/i)).toBeInTheDocument();
-            expect(wrapper.queryByText(/open/i)).toBeInTheDocument();
-        })
-    
-        it('displays the controls', () => {
-            expect(wrapper.queryByText(/lock gate/i)).toBeInTheDocument();
-            expect(wrapper.queryByText(/close gate/i)).toBeInTheDocument();
-        })
-    });
+    it('displays the lock display', () => {
+        expect(wrapper.queryByText(/unlocked/i)).toBeInTheDocument();
+        expect(wrapper.queryByText(/open/i)).toBeInTheDocument();
+    })
+
+    it('displays the controls', () => {
+        expect(wrapper.queryByText(/lock gate/i)).toBeInTheDocument();
+        expect(wrapper.queryByText(/close gate/i)).toBeInTheDocument();
+    })
+});

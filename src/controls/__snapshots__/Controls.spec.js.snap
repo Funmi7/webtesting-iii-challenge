@@ -1,21 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dashboard component matches the snapshot! 1`] = `
+exports[`Control component Matches the snapshot! 1`] = `
 <div>
-  <div
-    class="display panel"
-  >
-    <div
-      class="led green-led"
-    >
-      Unlocked
-    </div>
-    <div
-      class="led green-led"
-    >
-      Open
-    </div>
-  </div>
   <div
     class="controls panel"
   >
