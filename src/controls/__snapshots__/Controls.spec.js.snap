@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Control component Matches the snapshot! 1`] = `
+<div>
+  <div
+    class="controls panel"
+  >
+    <button
+      class="toggle-btn"
+      data-testid="toggleCloseButton"
+      disabled=""
+    >
+      Lock Gate
+    </button>
+    <button
+      class="toggle-btn"
+      data-testid="toggleLockButton"
+    >
+      Close Gate
+    </button>
+  </div>
+</div>
+`;
